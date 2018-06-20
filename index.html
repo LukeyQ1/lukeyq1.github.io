@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!-- Other -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/timeline.css" rel="stylesheet">
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar" data-offset="60">
 
@@ -51,10 +52,55 @@
     <h1>Skills</h1>
     <p style="height: 500px"></p>
 </div>
-<div class="container-fluid" id="xp">
-    <h1>Experience</h1>
-    <p style="height: 500px"></p>
+
+<div class="container" id="xp">
+    <div class="row">
+    <div class="col-lg-12 text-center">
+        <h1>Experience</h1>
+        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-image">
+                        <img class="rounded-circle img-fluid" src="assets/icon.png" alt="">
+                    </div>
+                    <div class="timeline-panel">
+                        <div data-sr="enter right" class="timeline-heading">
+                            <h4>2015</h4>
+                            <h4>Work</h4>
+                        </div>
+                        <div data-sr="enter right" class="timeline-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                        <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+                    </div>
+                    <div  data-sr="enter left" class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>2016</h4>
+                            <h4>Work</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                        <h4>The<br>Future</h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
+
 <div class="container-fluid" id="projects">
     <h1>Projects</h1>
     <p style="height: 500px"></p>
@@ -87,6 +133,16 @@
 <!-- Custom JavaScript -->
 <script src="js/jquery.easing.js"></script>
 <script src="js/smoothScroll.js"></script>
+
+<!-- Scroll Animation -->
+<script src="js/scrollReveal.min.js"></script>
+<script>
+    var config = {
+        move: '50px',
+        over: '1.0s',
+    }
+    window.sr = new scrollReveal(config);
+</script>
 
 </body>
 </html>
