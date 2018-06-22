@@ -2,6 +2,10 @@ body {
     position: relative;
 }
 
+.material-icons {
+    user-select: none;
+}
+
 /* Navbar */
 .navbar {
     background-color: #fafafa;
@@ -59,11 +63,11 @@ button:focus {
 
 /* Links */
 a:link {
-    color: #f5f6f7;
+    color: #fafafa;
     text-decoration: none;
 }
 a:visited {
-    color: #f5f6f7;
+    color: #fafafa;
     text-decoration: none;
 }
 a:hover {
@@ -77,13 +81,36 @@ a:active {
 
 /* Columns */
 .padded {
-    padding: 10px 30px;
+    padding: 15px 30px;
 }
 
 
-.skill-icon {
+/* Sections */
+section {
+    padding: 20px 0;
+}
+.title {
+    padding: 10px 0 5px;
+}
+.blue {
+    color: #fafafa;
+    background-color: rgb(0, 119, 198);
+}
+
+.text-hover:hover {
+    color: rgb(0, 119, 198);
+    cursor: pointer;
+}
+.blue .text-hover:hover {
+    color: black;
+}
+
+.icon {
     font-size: 80px;
     color: rgb(0, 119, 198);
+}
+.blue .icon {
+    color: #fafafa;
 }
 
 /* Timeline Cards */
