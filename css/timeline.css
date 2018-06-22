@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
 
- /* This Code has been shortened and editted for use on this site */
+ /* This Code has been shortened and edited for use on this site */
 
   .timeline {
     position: relative;
@@ -20,7 +20,12 @@
     width: 2px;
     margin-left: -1.5px;
     content: '';
-    background-color: #e9ecef;
+    background-color: #fafafa;
+  }
+
+  .timeline-panel {
+    color: black;
+    background-color: #fafafa;
   }
   
   .timeline > li {
@@ -68,8 +73,8 @@
     height: 80px;
     margin-left: 0;
     text-align: center;
-    color: white;
-    border: 7px solid #e9ecef;
+    color: #fafafa;
+    border: 7px solid #fafafa;
     border-radius: 100%;
     background-color: rgb(0, 119, 198);
   }
@@ -116,6 +121,11 @@
   .timeline .timeline-body > ul,
   .timeline .timeline-body > p {
     margin-bottom: 0;
+  }
+
+
+  .end:after {
+    content: none !important;
   }
   
   @media (min-width: 768px) {

@@ -87,16 +87,23 @@ a:active {
 
 /* Sections */
 section {
-    padding: 20px 0;
+    padding: 30px 0px;
 }
 .title {
     padding: 10px 0 5px;
 }
+
+/* Colour Themes */
 .blue {
     color: #fafafa;
     background-color: rgb(0, 119, 198);
 }
+.grey {
+    color: #fafafa;
+    background-color: #333333;
+}
 
+/* Hover Text */
 .text-hover:hover {
     color: rgb(0, 119, 198);
     cursor: pointer;
@@ -105,11 +112,12 @@ section {
     color: black;
 }
 
+/* Icons */
 .icon {
     font-size: 80px;
     color: rgb(0, 119, 198);
 }
-.blue .icon {
+.blue .icon, .grey .icon {
     color: #fafafa;
 }
 
