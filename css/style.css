@@ -88,14 +88,14 @@ section {
     padding: 30px 0px;
 }
 .title {
-    padding: 10px 0 5px;
+    padding: 10px 0 10px;
 }
 .padding {
     padding: 30px 0px;
 }
 
 /* About */
-.about-img {
+.about-link {
     height: 80px;
     width: 70%;
     margin-left: 15%;
@@ -103,10 +103,10 @@ section {
     background-color: rgb(235, 235, 235);
     border: none;
 }
-.about-img:hover { 
+.about-link:hover { 
     background-color: rgb(0, 119, 198);
 }
-.about-img img {
+.about-link img {
     max-width: 35%;
     height: auto;
     position: absolute;
@@ -124,12 +124,41 @@ section {
     background-repeat: no-repeat;
     opacity: 0.95;
     color: #fafafa;
+    background-color: rgba(51, 51, 51, 0.5);
 }
 .background-img > div {
     margin-top: 15vh;
     background-color: rgba(51, 51, 51, 0.5);
     padding: 20px;
 }
+
+
+/* Projects */
+.tile {
+    height: 200px;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.95;
+    background-color: rgba(51, 51, 51, 0.5);
+    padding: 0px;
+}
+
+.tile-text {
+    opacity: 0;
+    transition: .3s ease;
+    color: #fafafa;
+    font-size: 12px;
+    padding: 10px;
+    padding: 20px 20px 10px;
+    background-color: #333333;
+    width: 100%;
+}
+.tile:hover .tile-text {
+    opacity: 1;
+}
+
+
 /* Colour Themes */
 .blue {
     color: #fafafa;
@@ -175,7 +204,14 @@ section {
 
 @media (max-width: 768px) {
     .timeline > li .timeline-panel {
-        width: 80% !important;
+        width: 75% !important;
         padding: 20px !important;
         }
+
+    .tile-info {
+        display: none !important;
+    }
+    .tile-text {
+        opacity: 1;
+    }
 }
