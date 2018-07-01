@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121674294-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-121674294-1');
+    </script>
   <title>LQ Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,10 +62,10 @@
 </section>
 
 
-<section class="container-fluid" id="about">
+<section class="container-fluid no-padding" id="about">
     <div class="row">
         <div class="col-lg-12 background-img padding" style="background-image: url(assets/pc.jpg)">
-            <div class="col-lg-6 offset-md-3 card" data-sr="enter bottom">
+            <div class="col-md-6 offset-md-3" data-sr="enter bottom">
                 <h1>Tech</h1>
                 I've always had a keen interest in software and computers which is what lead to my degree choice.
                 I try to keep up to date with the latest innovations and I have taken apart, repaired and reassembled an iPhone out of curiosity.
@@ -66,7 +75,7 @@
 
     <div class="row">
         <div class="col-lg-12 background-img padding" style="background-image: url(assets/rl.jpg)">
-            <div class="col-lg-6 offset-md-3 card" data-sr="enter bottom">
+            <div class="col-md-6 offset-md-3" data-sr="enter bottom">
                 <h1>Gaming</h1>
                 I'm an avid gamer and have built a few PCs over the years.
                 I enjoy playing competitive team focused games such as Overwatch and Rocket League.
@@ -126,7 +135,7 @@
 
     <div class="row text-center">
         <div class="col-md-6 padded" data-sr="enter bottom" data-toggle="collapse" data-target=".subject-collapse">
-            <h2>7A*</h2>
+            <h3>7A*</h3>
             <h4>GCSE</h4>
             <div class="collaspe show subject-collapse text-hover">
                 Including Maths, English Language and Physics</br>
@@ -138,7 +147,7 @@
             </div>
         </div>
         <div class="col-md-6 padded" data-sr="enter bottom" data-toggle="collapse" data-target=".subject-collapse">
-            <h2>39</h2>
+            <h3>39</h3>
             <h4>International Baccalaureate</h4>
             <div class="collaspe show subject-collapse text-hover">
                 7, 7, 6 in Physics, Chemistry and Maths at Higher Level</br>
@@ -184,7 +193,7 @@
                     <div class="timeline-image">
                         <img class="rounded-circle img-fluid" src="assets/timeline/porsche_logo.png" alt="">
                     </div>
-                    <div data-sr="enter right move 25px" class="timeline-panel">
+                    <div data-sr="enter right move 25px" class="timeline-panel card">
                         <div class="timeline-heading">
                             <h4>2012 - 1 Week</h4>
                             <h4>Porsche Centre</h4>
@@ -198,7 +207,7 @@
                     <div class="timeline-image">
                         <img class="rounded-circle img-fluid" src="assets/timeline/obag_logo.jpg" alt="">
                     </div>
-                    <div data-sr="enter right move 25px" class="timeline-panel">
+                    <div data-sr="enter left move 25px" class="timeline-panel card">
                         <div class="timeline-heading">
                             <h4>2015 - 2017</h4>
                             <h4>Obag UK</h4>
@@ -217,7 +226,7 @@
                     <div class="timeline-image">
                         <img class="rounded-circle img-fluid" src="assets/timeline/arm_logo.jpg" alt="">
                     </div>
-                    <div  data-sr="enter left move 25px" class="timeline-panel">
+                    <div  data-sr="enter right move 25px" class="timeline-panel card">
                         <div class="timeline-heading">
                             <h4>2017</h4>
                             <h4>Arm</h4>
@@ -250,19 +259,19 @@
 
     <div class="row">
         <div class="collapsed col-md-4 tile" data-toggle="collapse" href="#tile1" style="background-image: url(assets/projects/neuron.png)">
-            <div class="tile-text">
+            <div class="tile-text text-hover">
                 <h4>neuron</h4>
                 Interactive Programming Experience for VS Code. Combines a rich editor experience with the interactive programming model of Jupyter Notebooks.
             </div>
         </div>
         <div class="collapsed col-md-4 tile" data-toggle="collapse" href="#tile2" style="background-image: url(assets/projects/robot.jpg)">
-            <div class="tile-text">
+            <div class="tile-text text-hover">
                 <h4>Robot</h4>
                 BrickPi Robot capable of Monte Carlo Localization, navigation using odometry and object avoidance. 
             </div>
         </div>
         <div class="collapsed col-md-4 tile" data-toggle="collapse" href="#tile3" style="background-image: url(assets/projects/fpga.jpg)">
-            <div class="tile-text">
+            <div class="tile-text text-hover">
                 <h4>Drawing App FPGA</h4>
                 Designed a program for an FPGA using Catapult C which allowed the user to apply different filters to selected parts of a live video stream.
             </div>
@@ -298,19 +307,19 @@
 
     <div class="row">
         <div class="collapsed col-md-4 tile" data-toggle="collapse" href="#tile4" style="background-image: url(assets/projects/compiler.png)">
-            <div class="tile-text">
+            <div class="tile-text text-hover">
                 <h4>C-89 Compiler</h4>
                 C Compiler written in C++, Flex and Bison which could compile basic C-89, including function calls and loops, into MIPS Assembly language.
             </div>
         </div>
         <div class="collapsed col-md-4 tile" data-toggle="collapse" href="#tile5" style="background-image: url(assets/projects/mips.png)">
-            <div class="tile-text">
+            <div class="tile-text text-hover">
                 <h4>MIPS Processor</h4>
                 Simulator written in C++ capable of running the MIPS I instruction set according to specification.
             </div>
         </div>
         <div class="collapsed col-md-4 tile" data-toggle="collapse" href="#tile6" style="background-image: url(assets/projects/more.png)">
-            <div class="tile-text">
+            <div class="tile-text text-hover">
                 <h4>More</h4>
                 Smaller projects including Echo Synthesizer in Verilog and 2048 in C++ and Python.
             </div>
@@ -329,7 +338,7 @@
 
     <div class="row">
         <div class="col-lg-12 padded" data-sr="enter bottom">
-            <h2 class="title">KPMG International Case Competition</h2>
+            <h2><img class="" src="assets/kpmg.png" alt="" style="height: 1.5em"> International Case Competition</h2>
             Earlier this year I entered the competition where I competed in a team of 4 with 2 members I had not met before.
             In the competition every team is given a case study and 2 hours to prepare a presentation which you then give to a panel of judges.
             This involved analysis and identifying of key business issues and designing creative solutions.
@@ -339,7 +348,7 @@
 
     <div class="row">
         <div class="col-md-6 padded" data-sr="enter bottom wait 0.3s">
-            <h2 class="title">Dance Club IT Officer</h2>
+            <h2>Dance Club IT Officer</h2>
             This year I was voted in as IT officer for Imperial Dance Club.
             My main responsibility is to maintain their <a class="black" href="https://www.icdance.club/">Wordpress website</a>
             which I have overhauled and created new features for based on community requests.
@@ -347,7 +356,7 @@
         </div>
 
         <div class="col-md-6 padded" data-sr="enter bottom wait 0.3s">
-            <h2 class="title">eSports Head of Rocket League</h2>
+            <h2>eSports Head of Rocket League</h2>
             After joining Imperial eSports Society and learning that they didn't offer Rocket League I volunteered to act as the "Head of Game" for Rocket League.
             In this role I manage teams to play in inter-university tournaments and organise events.
             After only 1 year this part of the Society now has 25 memebers.
@@ -357,7 +366,7 @@
 
 
 
-<footer class="container-fluid">
+<footer class="container-fluid blue">
     <a href="#top">
         <div class="col-lg-12 text-center">
             <i class="material-icons">keyboard_arrow_up</i>

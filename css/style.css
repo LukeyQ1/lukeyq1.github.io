@@ -1,6 +1,8 @@
 body {
     position: relative;
     color: black;
+    overflow-x: hidden;
+    background-color: #fafafa;
 }
 
 .material-icons {
@@ -19,6 +21,7 @@ button:focus {
     border-radius: 0;
     justify-content: space-around;
     padding: 0px;
+    font-size: 18px;
   }
 
 .nav {
@@ -41,13 +44,14 @@ button:focus {
 }
 
 #toggleIcon i {
-    margin: -8px;
-    padding: 8px;
+    margin: -13px;
+    padding: 10px;
 }
 
 #toggleIcon i, #toggleIcon i:visited,
 .navbar-brand, .navbar-brand:visited {
     color: #333333 !important;
+    height: 43px;
 }
 
 .navbar-brand:hover, .navbar-brand.active,
@@ -57,8 +61,6 @@ button:focus {
 }
 
 footer{
-    color: #fafafa;
-    background-color: #333333;
     padding: 15px 0px;
 }
 
@@ -69,29 +71,37 @@ a:link, a:visited  {
 }
 a:hover, a:active {
     color: rgb(0, 119, 198) !important;
-    text-decoration: none;
 }
+.blue a:hover, .blue a:active {
+    color: #333333 !important;
+}
+
+
 
 a:link.black, a:visited.black  {
     color: black;
     text-decoration: underline;
 }
 
+
 /* Columns */
 .padded {
     padding: 15px 30px;
 }
 
-
 /* Sections */
 section {
-    padding: 30px 0px;
+    padding: 20px 0 70px;
 }
 .title {
-    padding: 10px 0 10px;
+    padding: 25px 0 25px;
 }
 .padding {
     padding: 30px 0px;
+}
+.no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 /* About */
@@ -103,7 +113,7 @@ section {
     background-color: rgb(235, 235, 235);
     border: none;
 }
-.about-link:hover { 
+.about-link:hover, .about-link:active { 
     background-color: rgb(0, 119, 198);
 }
 .about-link img {
@@ -130,6 +140,8 @@ section {
     margin-top: 15vh;
     background-color: rgba(51, 51, 51, 0.5);
     padding: 20px;
+    border-radius: 5px;
+    border: none;
 }
 
 
@@ -142,8 +154,8 @@ section {
     opacity: 0.95;
     background-color: rgba(51, 51, 51, 0.5);
     padding: 0px;
+    cursor: pointer;
 }
-
 .tile-text {
     opacity: 0;
     transition: .3s ease;
@@ -154,7 +166,7 @@ section {
     background-color: #333333;
     width: 100%;
 }
-.tile:hover .tile-text {
+.tile:hover .tile-text, .tile:active .tile-text {
     opacity: 1;
 }
 
@@ -170,12 +182,9 @@ section {
 }
 
 /* Hover Text */
-.text-hover:hover {
+.text-hover:hover, .text-hover:active {
     color: rgb(0, 119, 198);
     cursor: pointer;
-}
-.blue .text-hover:hover {
-    color: black;
 }
 
 /* Icons */
@@ -188,23 +197,20 @@ section {
 }
 
 /* Timeline Cards */
-.timeline-panel {
-    box-shadow: 0 4px 12px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 5px;
-}
 .card {
     box-shadow: 0 4px 12px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px;
+    border: none;
 }
 .card img {
     border-radius: 5px;
 }
 
+/* Mobile */
 @media (max-width: 768px) {
     .timeline > li .timeline-panel {
-        width: 75% !important;
+        width: 72% !important;
         padding: 20px !important;
         }
 
@@ -213,5 +219,12 @@ section {
     }
     .tile-text {
         opacity: 1;
+    }
+    .tile {
+        cursor: default;
+    }
+    .text-hover:hover, .text-hover:active {
+        color: #fafafa;
+        cursor: default;
     }
 }
