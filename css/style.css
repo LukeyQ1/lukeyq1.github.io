@@ -50,7 +50,7 @@ button:focus {
 
 #toggleIcon i, #toggleIcon i:visited,
 .navbar-brand, .navbar-brand:visited {
-    color: #333333 !important;
+    color: black !important;
     height: 43px;
 }
 
@@ -62,6 +62,11 @@ button:focus {
 
 footer{
     padding: 15px 0px;
+}
+.copyright {
+    text-align: right;
+    font-size: 14px;
+    margin-top: -22px;
 }
 
 /* Links */
@@ -78,15 +83,23 @@ a:hover, a:active {
 
 
 
+a:link.link, a:visited.link  {
+    text-decoration: underline;
+}
 a:link.black, a:visited.black  {
     color: black;
-    text-decoration: underline;
 }
 
 
 /* Columns */
 .padded {
     padding: 15px 30px;
+}
+.padded-bottom {
+    padding-bottom: 30px;
+}
+.padded-top {
+    padding-top: 25px;
 }
 
 /* Sections */
@@ -113,7 +126,7 @@ section {
     background-color: rgb(235, 235, 235);
     border: none;
 }
-.about-link:hover, .about-link:active { 
+.about-link:hover, .about-link:active {
     background-color: rgb(0, 119, 198);
 }
 .about-link img {
@@ -128,9 +141,9 @@ section {
 }
 
 .background-img {
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
-    height: 60vh; 
+    height: 60vh;
     background-repeat: no-repeat;
     opacity: 0.95;
     color: #fafafa;
@@ -148,7 +161,7 @@ section {
 /* Projects */
 .tile {
     height: 200px;
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.95;
@@ -168,6 +181,9 @@ section {
 }
 .tile:hover .tile-text, .tile:active .tile-text {
     opacity: 1;
+}
+.tile-info {
+    padding: 20px 20px 4px;
 }
 
 
@@ -209,11 +225,6 @@ section {
 
 /* Mobile */
 @media (max-width: 768px) {
-    .timeline > li .timeline-panel {
-        width: 72% !important;
-        padding: 20px !important;
-        }
-
     .tile-info {
         display: none !important;
     }
@@ -226,5 +237,38 @@ section {
     .text-hover:hover, .text-hover:active {
         color: #fafafa;
         cursor: default;
+    }
+}
+
+/* Timeline */
+.end:after {
+    content: none !important;
+  }
+
+@media (max-width: 992px) {
+    .about-link {
+        height: 60px;
+    }
+
+    .timeline > li .timeline-panel {
+        width: 100% !important;
+        padding: 20px !important;
+        margin-top: 115px;
+        text-align: left !important;
+    }
+    .timeline > li {
+        margin-bottom: 20px !important;
+    }
+    .end:after {
+        content: ' ' !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline:before {
+        left: 50% !important;
+      }
+    .timeline > li .timeline-panel {
+        margin-top: 100px !important;
     }
 }
