@@ -79,6 +79,7 @@
                 <h1>Gaming</h1>
                 I'm an avid gamer and have built a few PCs over the years.
                 I enjoy playing competitive team focused games such as Overwatch and Rocket League.
+                At University i'm captain of two team in eSports Society and play weekly matches against other universities.
             </div>
         </div>
     </div>
@@ -220,7 +221,8 @@
             <div class="collapse course-collapse text-hover">
                     <strong>Year 1:</strong> Software Engineering, User-Centred Information Systems, Signals and Communications, Digital Electronics<br><br>
                     <strong>Year 2:</strong> Language Processors, Computer Architecture, Algorithms and Complexity, Computer Networks, Databases<br><br>
-                    <strong>Year 3:</strong> Graphics, Robotics, High Level Programming, Computer Vision, Machine Learning, Managerial Economics<br>
+                    <strong>Year 3:</strong> Graphics, Robotics, High Level Programming, Computer Vision, Machine Learning, Managerial Economics<br><br>
+                    <strong>Year 4:</strong> Privacy Engineering, Human Centred Robotics, AI, Ongoing...<br>
                     <i class="material-icons">keyboard_arrow_up</i>
             </div>
         </div>
@@ -340,10 +342,10 @@
                 Simple 2D Game Engine written in C++ using the SDL2 Library.
             </div>
         </div>
-        <div class="collapsed col-md-4 tile" data-sr="enter right" data-toggle="collapse" href="#tileRobot" style="background-image: url(assets/projects/robot.jpg)">
+        <div class="collapsed col-md-4 tile" data-sr="enter right" data-toggle="collapse" href="#tileMusic" style="background-image: url(assets/projects/music.png)">
             <div class="tile-text text-hover">
-                <h4>BrickPi Robot</h4>
-                BrickPi Robot capable of Monte Carlo Localization, navigation using odometry and object avoidance. 
+                <h4>instruMentor - Music Teacher Robot</h4>
+                Interactive Robot for Musical Instrument Tutoring with Note Recognition, Voice Assistant and Touch Screen.
             </div>
         </div>
     </div>
@@ -357,8 +359,9 @@
                     We built the back-end using TypeScript and the VS Code API. I focused mainly on the front-end, specifically the UI, which was built using the Angular Framework. 
                     The final extension was capable of running and displaying interactive graphs, images, maps and more in cards that could be managed by the user and even exported to Jupyter.  
                     Both Python and R could be used simultaneously and with features including selecting, filter, searching and opening in browser the user is able to view and analyse their data however they want.
+                    The extension was published on the VS Code Marketplace and has over 10,000 downloads.
                     <br><br>
-                    For more information, please view the <a class="link" href="https://github.com/lorenzo2897/vscode-ipe">GitHub repository</a> and the
+                    For more information, please view the <a class="link" href="https://github.com/neuron-team/vscode-ipe">GitHub repository</a> and the
                     <a class="link" href="https://marketplace.visualstudio.com/items?itemName=neuron.neuron-IPE">VS Code Marketplace</a>.
                     
                 </p>
@@ -385,25 +388,25 @@
                 </p>
             </div>
         </div>
-        <div id="tileRobot" class="collapse col-md-12" data-parent="#projects">
+        <div id="tileMusic" class="collapse col-md-12" data-parent="#projects">
+                <div class="tile-info">
+                    <h5>instruMentor - Music Teacher Robot</h5>
+                    <p>
+                        As a group project in Human Centred Robotics we were tasked with designing and building a robot. Our Robot teaches recorder via robotic 3D printed hands which imitate real hand positions.
+                        It has microphones for Note Recogistion and a Voice Assistant which can answer user questions such as "How do you play a G?".
+                        The robot provides feedback via emojis, as the user plays notes the robot recognises it and updates the display accordingly.
+                        I focused on building the display and UI component as well as the "Lesson Controller" which intergrates all the components using multiple threads.
+                        The project was coded in Python and the entire robot runs on a Raspberry Pi.
+                    </p>
+                </div>
+            </div>
+        <div id="tileBrickpi" class="collapse col-md-12" data-parent="#projects">
             <div class="tile-info">
                 <h5>BrickPi Robot</h5>
                 <p>
                     As a requirement of my 3rd year robotics course, our team had to design and build a robot from Lego Technic and program it in Python using BrickPi. 
                     The robot was capable of making precise movements using odometry and Monte Carlo localisation with the help of a sonar sensor. 
                     The final challenge was to program the robot to navigate through an obstacle course as quickly as possible.
-
-                </p>
-            </div>
-        </div>
-        <div id="tileFPGA" class="collapse col-md-12" data-parent="#projects">
-            <div class="tile-info">
-                <h5>FPGA Drawing App</h5>
-                <p>
-                    The program allowed the user to apply different effects to several areas of an image coming from a camera feed in real time. 
-                    We created 6 filters using Catapult C including edge detection and a colour inverter which were selected using toggle switches. 
-                    Sections of the image could be selected by left clicking on the area with the mouse, different filters could be applied to different parts of the image at the same time. 
-                    Selected areas could be removed using undo or reset trigged via the mouse.
                 </p>
             </div>
         </div>
@@ -414,7 +417,6 @@
                     For Language Processors in 2nd year we were tasked to build a complete compiler for C-89 into MIPS assembly instructions. 
                     This included creating a lexer in Flex and parser in Bison. 
                     My compiler was capable of compiling arithmetic, control flow statements, function calls and other simple programming tasks for integers.
-
                 </p>
             </div>
         </div>
@@ -426,6 +428,17 @@
                     I also produced a corresponding test bench to test any CPU simulator built for the provided API. 
                     Over 50 instructions were implemented including loads, branches and multiplication. 
                     Overall my processor was 91% accurate while my test bench was 96% accurate.
+                </p>
+            </div>
+        </div>
+        <div id="tileFPGA" class="collapse col-md-12" data-parent="#projects">
+            <div class="tile-info">
+                <h5>FPGA Drawing App</h5>
+                <p>
+                    The program allowed the user to apply different effects to several areas of an image coming from a camera feed in real time. 
+                    We created 6 filters using Catapult C including edge detection and a colour inverter which were selected using toggle switches. 
+                    Sections of the image could be selected by left clicking on the area with the mouse, different filters could be applied to different parts of the image at the same time. 
+                    Selected areas could be removed using undo or reset trigged via the mouse.
                 </p>
             </div>
         </div>
@@ -451,10 +464,10 @@
     </div>
 
     <div class="row">
-        <div class="collapsed col-md-4 tile" data-sr="enter left" data-toggle="collapse" href="#tileFPGA" style="background-image: url(assets/projects/fpga.jpg)">
+        <div class="collapsed col-md-4 tile" data-sr="enter right" data-toggle="collapse" href="#tileBrickpi" style="background-image: url(assets/projects/brickpi.jpg)">
             <div class="tile-text text-hover">
-                <h4>FPGA Drawing App</h4>
-                FPGA program written in Catapult C which allows the user to apply different filters to a live video stream.
+                <h4>BrickPi Robot</h4>
+                BrickPi Robot capable of Monte Carlo Localization, navigation using odometry and object avoidance. 
             </div>
         </div>
         <div class="collapsed col-md-4 tile" data-sr="enter bottom" data-toggle="collapse" href="#tileCompile" style="background-image: url(assets/projects/compiler.png)">
@@ -467,6 +480,12 @@
             <div class="tile-text text-hover">
                 <h4>MIPS Processor Simulator</h4>
                 Simulator written in C++ capable of running the MIPS I instruction set according to specification.
+            </div>
+        </div>
+        <div class="collapsed col-md-4 tile" data-sr="enter left" data-toggle="collapse" href="#tileFPGA" style="background-image: url(assets/projects/fpga.jpg)">
+            <div class="tile-text text-hover">
+                <h4>FPGA Drawing App</h4>
+                FPGA program written in Catapult C which allows the user to apply different filters to a live video stream.
             </div>
         </div>
         <div class="collapsed col-md-4 tile" data-sr="enter left" data-toggle="collapse" href="#tileMore" style="background-image: url(assets/projects/more.png)">
@@ -500,7 +519,7 @@
     <div class="row">
         <div class="col-md-6 padded-bottom" data-sr="enter bottom wait 0.2s">
             <h2>Dance Club IT Officer</h2>
-            This year I was voted in as IT officer for Imperial Dance Club.
+            Last year I was voted in as IT officer for Imperial Dance Club.
             My main responsibility is to maintain their <a class="black link" href="https://www.icdance.club/">Wordpress website</a>
             which I have overhauled and created new features for based on community requests.
             I am also in the process of digitising and improving the Rota system and improving how the club takes class payments.
@@ -527,7 +546,7 @@
             Top
         </div>
     </a>
-    <div class="copyright">© Luke Quinlan 2018</div>
+    <div class="copyright">© Luke Quinlan 2019</div>
 </div>
 </Footer>
 
